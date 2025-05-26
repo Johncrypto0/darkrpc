@@ -2,79 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DarkRPC.xyz – Under Maintenance</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #0d0d0d;
       font-family: 'Inter', sans-serif;
+      background: linear-gradient(-45deg, #0f0f0f, #18191f, #111, #202124);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
       color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 0 60px rgba(255, 115, 0, 0.1);
       text-align: center;
-    }
-
-    .container {
-      background-color: #141414;
-      border: 1px solid #2c2c2c;
-      border-radius: 16px;
-      padding: 40px 30px;
-      max-width: 480px;
-      box-shadow: 0 0 40px rgba(255, 115, 0, 0.15);
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      color: #ffa500;
-    }
-
-    p {
-      font-size: 1rem;
-      color: #bbb;
-      margin-bottom: 25px;
-    }
-
-    .status {
-      background-color: #222;
-      border: 1px solid #333;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-size: 0.9rem;
-      color: #eee;
-      display: inline-block;
+      max-width: 460px;
     }
 
     .logo {
-      font-size: 1.5rem;
-      color: #fff;
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #ff6b00;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1rem;
       margin-bottom: 20px;
-      font-weight: bold;
+    }
+
+    .status {
+      background: #111;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      display: inline-block;
+      color: #ff914d;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
     .footer {
-      margin-top: 30px;
+      margin-top: 25px;
       font-size: 0.75rem;
-      color: #666;
-    }
-
-    .highlight {
-      color: #ff6b00;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <div class="logo">⚡ DarkRPC.xyz</div>
-    <h1>Under Maintenance</h1>
-    <p>We’re upgrading our infrastructure.<br>Please check back in a few hours.</p>
-    <div class="status">Status: <span class="highlight">Maintenance in Progress 🔧</span></div>
-    <div class="footer">© 2025 DarkRPC. Built for Developers.</div>
+    <h1>We'll Be Back Soon</h1>
+    <p>We’re upgrading our infrastructure to serve you better.<br>Please check back shortly.</p>
+    <div class="status">Status: Maintenance in Progress 🔧</div>
+    <div class="footer">© 2025 DarkRPC • Built for Web3 Developers</div>
   </div>
 </body>
 </html>
